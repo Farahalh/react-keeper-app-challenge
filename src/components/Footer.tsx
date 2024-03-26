@@ -4,7 +4,7 @@ export default function Footer() {
   let currentYear = new Date().getFullYear();
   return (
     <footer>
-      <p>&#169;{currentYear}</p>
+      <p>&#169; {currentYear}</p>
     </footer>
   );
 }
