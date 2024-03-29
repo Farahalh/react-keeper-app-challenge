@@ -1,7 +1,12 @@
 import React from "react";
 import Note from "./Note";
-import { NoteProps } from "./Note";
 
-function createNote(note: NoteProps) {
-  return <Note key={note.id} title={note.title} content={note.content} />;
+interface NoteProps {
+  key: number;
+  title: string;
+  content: string;
+}
+
+export default function createNote(note: NoteProps) {
+  return <Note key={note.key} title={note.title} content={note.content} />;
 }

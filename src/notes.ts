@@ -1,10 +1,4 @@
-export interface NoteProps {
-  key: number;
-  title: string;
-  content: string;
-}
-
-const notesData: NoteProps[] = [
+const notes= [
   {
     key: 1,
     title: "Delegation",
@@ -31,4 +25,4 @@ const notesData: NoteProps[] = [
   },
 ];
 
-export default notesData;
+export default notes;
